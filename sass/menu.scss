@@ -1,0 +1,128 @@
+.menu {
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    z-index: 1;
+}
+
+#menuBtn {
+    display: none;
+}
+
+.menu_overlay {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    overflow: hidden;
+    color: #fff;
+    z-index: 100;
+    transform: translateY(-100%);
+    transition: transform 0.5s ease;
+    background: #ffe259;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffa751, #ffe259);
+    background: linear-gradient(to right, #ffa751, #ffe259);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .list {
+        height: 40%;
+        width: 40%;
+        position: relative;
+        list-style: none;
+        li {
+            height: 50%;
+            width: 50%;
+            padding: 10px;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.4s ease;
+            &:nth-child(1) {
+                top: 0;
+                left: 0;
+                background-color: #4b134f;
+            }
+            &:nth-child(2) {
+                bottom: 0;
+                left: 0;
+                background-color: #c94b4b;
+            }
+            &:nth-child(3) {
+                top: 0;
+                right: 0;
+                background-color: #f7971e;
+            }
+            &:nth-child(4) {
+                bottom: 0;
+                right: 0;
+                background-color: slateblue;
+            }
+            &:nth-child(1):hover,
+            &:nth-child(2):hover {
+                z-index: 1;
+                animation: bounce 2s ease infinite;
+            }
+            &:nth-child(3):hover,
+            &:nth-child(4):hover {
+                z-index: 1;
+                animation: bounce2 2s ease infinite;
+            }
+        }
+        a {
+            font-size: 1.6rem;
+            text-decoration: none;
+            color: #fff;
+        }
+    }
+    .fas {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        font-size: 2.5rem;
+        transition: all 0.3s ease;
+        z-index: 100;
+        &:hover {
+            color: #4b134f;
+            transform: scale(1.1) rotate(180deg);
+        }
+    }
+}
+
+@keyframes bounce {
+    0% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(1.1) rotate(10deg);
+    }
+    50% {
+        transform: scale(1);
+    }
+    75% {
+        transform: scale(1.1) rotate(10deg);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes bounce2 {
+    0% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(1.1) rotate(-10deg);
+    }
+    50% {
+        transform: scale(1);
+    }
+    75% {
+        transform: scale(1.1) rotate(-10deg);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Poppins:wght@400;600&display=swap');
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Oswald', sans-serif;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+}
+
+.logoTop {
+    display: block;
+    position: absolute;
+    margin: auto;
+    width: 100%;
+}
+
+img.logo {
+    width: 35%;
+    margin: auto;
+}
+
+a.nav-link::before {
+    content: 'Dětská skupina';
+    display: inline-block;
+    width: auto;
+    height: 30px;
+    position: relative;
+    top: -55px;
+    left: 111px;
+}
+
+.nav-link {
+    text-align: center;
+}

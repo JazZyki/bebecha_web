@@ -1,0 +1,334 @@
+@charset "UTF-8";
+/* RESET CSS */
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Poppins:wght@400;600&display=swap");
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+table {
+  border-spacing: 0;
+}
+
+fieldset,
+img {
+  border: 0;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-weight: normal;
+  font-style: normal;
+}
+
+strong {
+  font-weight: bold;
+}
+
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+caption,
+th {
+  text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  color: #f2f2f2;
+}
+
+q:before,
+q:after {
+  content: "";
+}
+
+abbr,
+acronym {
+  border: 0;
+}
+
+/* END OF RESET */
+.menu {
+  display: block;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  z-index: 1;
+}
+
+#menuBtn {
+  display: none;
+}
+
+.menu_overlay {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  overflow: hidden;
+  color: #fff;
+  z-index: 100;
+  transform: translateY(-100%);
+  transition: transform 0.5s ease;
+  background: #ffe259;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ffa751, #ffe259);
+  background: linear-gradient(to right, #ffa751, #ffe259);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu_overlay .list {
+  height: 40%;
+  width: 40%;
+  position: relative;
+  list-style: none;
+}
+.menu_overlay .list li {
+  height: 50%;
+  width: 50%;
+  padding: 10px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s ease;
+}
+.menu_overlay .list li:nth-child(1) {
+  top: 0;
+  left: 0;
+  background-color: #4b134f;
+}
+.menu_overlay .list li:nth-child(2) {
+  bottom: 0;
+  left: 0;
+  background-color: #c94b4b;
+}
+.menu_overlay .list li:nth-child(3) {
+  top: 0;
+  right: 0;
+  background-color: #f7971e;
+}
+.menu_overlay .list li:nth-child(4) {
+  bottom: 0;
+  right: 0;
+  background-color: slateblue;
+}
+.menu_overlay .list li:nth-child(1):hover, .menu_overlay .list li:nth-child(2):hover {
+  z-index: 1;
+  animation: bounce 2s ease infinite;
+}
+.menu_overlay .list li:nth-child(3):hover, .menu_overlay .list li:nth-child(4):hover {
+  z-index: 1;
+  animation: bounce2 2s ease infinite;
+}
+.menu_overlay .list a {
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #fff;
+}
+.menu_overlay .fas {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 2.5rem;
+  transition: all 0.3s ease;
+  z-index: 100;
+}
+.menu_overlay .fas:hover {
+  color: #4b134f;
+  transform: scale(1.1) rotate(180deg);
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.1) rotate(10deg);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.1) rotate(10deg);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes bounce2 {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.1) rotate(-10deg);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.1) rotate(-10deg);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+.container {
+  background: url("../img/parallax/home/background.jpg") no-repeat;
+  background-size: cover;
+  width: 100%;
+  overflow: hidden;
+  max-width: 100vw;
+  height: calc(100vh - 100px);
+  padding: 0;
+}
+
+#scene {
+  width: 100%;
+  height: 100%;
+}
+
+.firstParallax {
+  width: 30%;
+  position: relative;
+  left: 16% !important;
+  height: auto;
+  top: 50% !important;
+}
+
+.secondParallax {
+  left: 33% !important;
+  top: 59% !important;
+  width: 13%;
+  height: auto;
+}
+
+.thirdParallax {
+  left: 53% !important;
+  top: 50% !important;
+  width: 11%;
+  height: auto;
+}
+
+.fourthParallax {
+  left: 65% !important;
+  top: 53% !important;
+  width: 15%;
+  height: auto;
+}
+
+.firstParallax img,
+.secondParallax img,
+.thirdParallax img,
+.fourthParallax img {
+  width: 100%;
+}
+
+.text h1 {
+  font-family: Verdana, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  color: wheat;
+  border: 1px solid #131212;
+  background: #131212;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Oswald", sans-serif;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+}
+
+.logoTop {
+  display: block;
+  position: absolute;
+  margin: auto;
+  width: 100%;
+}
+
+img.logo {
+  width: 35%;
+  margin: auto;
+}
+
+a.nav-link::before {
+  content: "Dětská skupina";
+  display: inline-block;
+  width: auto;
+  height: 30px;
+  position: relative;
+  top: -55px;
+  left: 111px;
+}
+
+.nav-link {
+  text-align: center;
+}
+
+.home .jumbotron {
+  height: 100vh;
+  padding: 0;
+}
+
+/*# sourceMappingURL=profile.css.map */
