@@ -1,58 +1,48 @@
-* {
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
-}
-
-.container {
+.containerParallax {
     background: url("../img/parallax/home/background.jpg") no-repeat;
     background-size: cover;
     width: 100%;
     overflow: hidden;
     max-width: 100vw;
-    height: calc(100vh - 100px);
+    height: 100vh;
     padding: 0;
-}
-
-#scene {
-    width: 100%;
-    height: 100%;
-}
-
-.firstParallax {
-    width: 30%;
-    position: relative;
-    left: 16% !important;
-    height: auto;
-    top: 50% !important;
-}
-
-.secondParallax {
-    left: 33% !important;
-    top: 59% !important;
-    width: 13%;
-    height: auto;
-}
-
-.thirdParallax {
-    left: 53% !important;
-    top: 50% !important;
-    width: 11%;
-    height: auto;
-}
-
-.fourthParallax {
-    left: 65% !important;
-    top: 53% !important;
-    width: 15%;
-    height: auto;
-}
-
-.firstParallax img,
-.secondParallax img,
-.thirdParallax img,
-.fourthParallax img {
-    width: 100%;
+    #scene {
+        width: 100%;
+        height: 100%;
+        .firstParallax {
+            width: 30%;
+            position: relative;
+            left: 16% !important;
+            height: auto;
+            top: 50% !important;
+        }
+        .secondParallax {
+            left: 33% !important;
+            top: 59% !important;
+            width: 13%;
+            height: auto;
+        }
+        .thirdParallax {
+            left: 53% !important;
+            top: 50% !important;
+            width: 11%;
+            height: auto;
+        }
+        .fourthParallax {
+            left: 65% !important;
+            top: 53% !important;
+            width: 15%;
+            height: auto;
+        }
+        .firstParallax,
+        .secondParallax,
+        .thirdParallax,
+        .fourthParallax {
+            img {
+                width: 100%;
+            }
+        }
+    }
 }
 
 .text h1 {

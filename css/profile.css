@@ -219,60 +219,48 @@ acronym {
     transform: scale(1);
   }
 }
-* {
-  margin: 0%;
-  padding: 0%;
-  box-sizing: border-box;
-}
-
-.container {
+.containerParallax {
   background: url("../img/parallax/home/background.jpg") no-repeat;
   background-size: cover;
   width: 100%;
   overflow: hidden;
   max-width: 100vw;
-  height: calc(100vh - 100px);
+  height: 100vh;
   padding: 0;
 }
-
-#scene {
+.containerParallax #scene {
   width: 100%;
   height: 100%;
 }
-
-.firstParallax {
+.containerParallax #scene .firstParallax {
   width: 30%;
   position: relative;
   left: 16% !important;
   height: auto;
   top: 50% !important;
 }
-
-.secondParallax {
+.containerParallax #scene .secondParallax {
   left: 33% !important;
   top: 59% !important;
   width: 13%;
   height: auto;
 }
-
-.thirdParallax {
+.containerParallax #scene .thirdParallax {
   left: 53% !important;
   top: 50% !important;
   width: 11%;
   height: auto;
 }
-
-.fourthParallax {
+.containerParallax #scene .fourthParallax {
   left: 65% !important;
   top: 53% !important;
   width: 15%;
   height: auto;
 }
-
-.firstParallax img,
-.secondParallax img,
-.thirdParallax img,
-.fourthParallax img {
+.containerParallax #scene .firstParallax img,
+.containerParallax #scene .secondParallax img,
+.containerParallax #scene .thirdParallax img,
+.containerParallax #scene .fourthParallax img {
   width: 100%;
 }
 
@@ -306,13 +294,12 @@ p {
   margin: auto;
   width: 100%;
 }
-
-img.logo {
-  width: 35%;
-  margin: auto;
+.logoTop .nav-link {
+  text-align: center;
+  width: 80%;
+  margin: 15px auto;
 }
-
-a.nav-link::before {
+.logoTop .nav-link::before {
   content: "Dětská skupina";
   display: inline-block;
   width: auto;
@@ -320,10 +307,23 @@ a.nav-link::before {
   position: relative;
   top: -55px;
   left: 111px;
+  font-family: "Poppins", sans-serif;
+  color: #444;
 }
-
-.nav-link {
-  text-align: center;
+.logoTop .nav-link::after {
+  content: "z. s.";
+  display: inline-block;
+  width: auto;
+  height: 30px;
+  position: relative;
+  top: 55px;
+  left: -50px;
+  font-family: "Poppins", sans-serif;
+  color: #444;
+}
+.logoTop .nav-link .logo {
+  width: 35%;
+  margin: auto;
 }
 
 .home .jumbotron {

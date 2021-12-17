@@ -17,23 +17,35 @@ p {
     position: absolute;
     margin: auto;
     width: 100%;
-}
-
-img.logo {
-    width: 35%;
-    margin: auto;
-}
-
-a.nav-link::before {
-    content: 'Dětská skupina';
-    display: inline-block;
-    width: auto;
-    height: 30px;
-    position: relative;
-    top: -55px;
-    left: 111px;
-}
-
-.nav-link {
-    text-align: center;
+    .nav-link {
+        text-align: center;
+        width: 80%;
+        margin: 15px auto;
+        &::before {
+            content: 'Dětská skupina';
+            display: inline-block;
+            width: auto;
+            height: 30px;
+            position: relative;
+            top: -55px;
+            left: 111px;
+            font-family: 'Poppins', sans-serif;
+            color: #444;
+        }
+        &::after {
+            content: 'z. s.';
+            display: inline-block;
+            width: auto;
+            height: 30px;
+            position: relative;
+            top: 55px;
+            left: -50px;
+            font-family: 'Poppins', sans-serif;
+            color: #444;
+        }
+        .logo {
+            width: 35%;
+            margin: auto;
+        }
+    }
 }
