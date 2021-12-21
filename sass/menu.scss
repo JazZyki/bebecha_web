@@ -1,9 +1,19 @@
 .menu {
     display: block;
-    position: absolute;
+    position: fixed;
     right: 15px;
     top: 15px;
     z-index: 1;
+    .fas {
+        font-size: 2.5rem;
+        color: #dc143c;
+        cursor: pointer;
+        transition: .3s ease-in;
+        &:hover {
+            color: #32cd32;
+            transform: scale(1.1) rotate(180deg);
+        }
+    }
 }
 
 #menuBtn {
@@ -13,16 +23,13 @@
 .menu_overlay {
     width: 100%;
     height: 100vh;
-    position: absolute;
+    position: fixed;
     overflow: hidden;
     color: #fff;
     z-index: 100;
     transform: translateY(-100%);
     transition: transform 0.5s ease;
-    background: #ffe259;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #ffa751, #ffe259);
-    background: linear-gradient(to right, #ffa751, #ffe259);
+    background-color: #FFEA97;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,38 +50,50 @@
             &:nth-child(1) {
                 top: 0;
                 left: 0;
-                background-color: #4b134f;
+                background-color: #ff8c00;
             }
             &:nth-child(2) {
                 bottom: 0;
                 left: 0;
-                background-color: #c94b4b;
+                background-color: #32cd32;
             }
             &:nth-child(3) {
                 top: 0;
                 right: 0;
-                background-color: #f7971e;
+                background-color: #40e0d0;
             }
             &:nth-child(4) {
                 bottom: 0;
                 right: 0;
-                background-color: slateblue;
+                background-color: #8b008b;
             }
             &:nth-child(1):hover,
             &:nth-child(2):hover {
                 z-index: 1;
-                animation: bounce 2s ease infinite;
+                animation: bounce 2s ease;
             }
             &:nth-child(3):hover,
             &:nth-child(4):hover {
                 z-index: 1;
-                animation: bounce2 2s ease infinite;
+                animation: bounce2 2s ease;
             }
         }
         a {
-            font-size: 1.6rem;
+            font-family: 'Oswald', sans-serif;
+            font-size: 2.6rem;
             text-decoration: none;
             color: #fff;
+            .fas,
+            .fab {
+                position: relative;
+                display: inline-block;
+                top: -5px;
+                right: 0;
+                color: #fff;
+                &:hover {
+                    transform: none;
+                }
+            }
         }
     }
     .fas {
@@ -84,8 +103,10 @@
         font-size: 2.5rem;
         transition: all 0.3s ease;
         z-index: 100;
+        color: #32cd32;
+        cursor: pointer;
         &:hover {
-            color: #4b134f;
+            color: #dc143c;
             transform: scale(1.1) rotate(180deg);
         }
     }
@@ -102,7 +123,7 @@
         transform: scale(1);
     }
     75% {
-        transform: scale(1.1) rotate(10deg);
+        transform: scale(0.9) rotate(-10deg);
     }
     100% {
         transform: scale(1);
@@ -120,7 +141,7 @@
         transform: scale(1);
     }
     75% {
-        transform: scale(1.1) rotate(-10deg);
+        transform: scale(0.9) rotate(10deg);
     }
     100% {
         transform: scale(1);

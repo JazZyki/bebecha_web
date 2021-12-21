@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Poppins:wght@400;600&display=swap');
+$cervena: #dc143c;
+$oranzova: #ff8c00;
+$zelena: #32cd32;
+$modra: #40e0d0;
+$fialova: #8b008b;
+$cerna: #333;
 h1,
 h2,
 h3,
@@ -30,7 +36,10 @@ p {
             top: -55px;
             left: 111px;
             font-family: 'Poppins', sans-serif;
-            color: #444;
+            color: #333;
+            font-size: .8rem;
+            font-weight: bold;
+            text-transform: uppercase;
         }
         &::after {
             content: 'z. s.';
@@ -38,10 +47,13 @@ p {
             width: auto;
             height: 30px;
             position: relative;
-            top: 55px;
-            left: -50px;
+            top: 70px;
+            left: -23px;
             font-family: 'Poppins', sans-serif;
-            color: #444;
+            color: #333;
+            font-size: .8rem;
+            font-weight: bold;
+            text-transform: uppercase;
         }
         .logo {
             width: 35%;
