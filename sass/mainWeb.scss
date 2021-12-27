@@ -5,17 +5,22 @@ $zelena: #32cd32;
 $modra: #40e0d0;
 $fialova: #8b008b;
 $cerna: #333;
+$bila: #fff;
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+button {
     font-family: 'Oswald', sans-serif;
 }
 
 p {
     font-family: 'Poppins', sans-serif;
+}
+.row {
+    --bs-gutter-x: 0;
 }
 
 .logoTop {
@@ -60,4 +65,30 @@ p {
             margin: auto;
         }
     }
+}
+.buttonPositive {
+    color: $cervena;
+    background-color: $bila;
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 5px;
+    //border-radius: 100%;
+    font-family: 'Oswald', sans-serif;
+    transform: rotate(-5deg);
+    margin-top: 17px;
+    transition: .3s;
+    &:hover {
+        background-color: $bila;
+        border-color: inherit;
+        transform: rotate(-6deg) scale(1.1);
+        color: $cervena;
+    }
+    &:focus {
+        background-color: $cervena;
+        border-color: inherit;
+        box-shadow: none;
+    }
+}
+.modal-dialog {
+    max-width: 70vw;
 }

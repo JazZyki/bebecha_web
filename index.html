@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="cs">
 
 <head>
     <title>Bebecha.cz - Úvodní stránka</title>
@@ -9,124 +9,352 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/20100566aa.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css'>
-    <link rel="stylesheet" href="css/jumbotron.css">
-    <link rel="stylesheet" href="css/parallax.css">
     <link rel="stylesheet" href="css/profile.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
 </head>
 
 <body>
-    <input type="checkbox" name="" id="menuBtn">
-    <!--full screen NAVIGACE-->
-    <div class="menu_overlay">
-        <label for="menuBtn">
+<input type="checkbox" name="" id="menuBtn">
+<!--full screen NAVIGACE-->
+<div class="menu_overlay">
+    <label for="menuBtn">
         <i class="fas fa-times"></i>
     </label>
-        <ul class="list">
-            <li><a href="#" class="skolicka"><i class="fas fa-baby"></i> Školička</a></li>
-            <li><a href="#" class="tabory"><i class="fas fa-campground"></i> Tábory</a></li>
-            <li><a href="#" class="hlidani"><i class="fas fa-baby-carriage"></i> Hlídání dětí</a></li>
-            <li><a href="#" class="krouzky"><i class="fab fa-itunes-note"></i> Kroužky</a></li>
-        </ul>
-    </div>
-    <div class="menu">
-        <label for="menuBtn">
-            <i class="fas fa-bars"></i>
-        </label>
-    </div>
-    <!--end of full screen NAVIGACE-->
-    <div class="logoTop" role="banner">
-        <a class="nav-link" href="#"><img src="img/logo.png" class="logo" atl="logo Bebecha.cz"></a>
-        <a class="hiddenMenu" aria-label="Porklik na hlavní menu"></a>
-    </div>
+    <ul class="list">
+        <li><a href="#" class="skolicka"><i class="fas fa-baby"></i> Školička</a></li>
+        <li><a href="#" class="tabory"><i class="fas fa-campground"></i> Tábory</a></li>
+        <li><a href="#" class="hlidani"><i class="fas fa-baby-carriage"></i> Hlídání dětí</a></li>
+        <li><a href="#" class="krouzky"><i class="fab fa-itunes-note"></i> Kroužky</a></li>
+    </ul>
+</div>
+<div class="menu">
+    <label for="menuBtn">
+        <i class="fas fa-bars"></i>
+    </label>
+</div>
+<!--end of full screen NAVIGACE-->
+<div class="logoTop" role="banner">
+    <a class="nav-link" href="#"><img src="img/svg/logo_bebecha.svg" class="logo" alt="logo Bebecha.cz"></a>
+    <a class="hiddenMenu" aria-label="Proklik na hlavní menu" alt="Hlavní menu - proklik"></a>
+</div>
+<div class="home">
     <!--HERO PARALLAX ON HOVER-->
-    <div class="home">
-        <div class="jumbotron jumbotron-fluid">
-            <div id="container" class="containerParallax">
-                <div id="scene" class="scene">
-                    <div data-depth="1.00" class="firstParallax"><img src="img/parallax/home/mnu1.png"></div>
-                    <div data-depth="0.60" class="secondParallax"><img src="img/parallax/home/mnu2.png"></div>
-                    <div data-depth="0.40" class="thirdParallax"><img src="img/parallax/home/mnu3.png"></div>
-                    <div data-depth="0.80" class="fourthParallax"><img src="img/parallax/home/mnu4.png"></div>
-                </div>
-                <!--TODO: Pokud bude potřeba tlačítko-->
-                <!--<button type="button" class="btn btn-primary">Tlačítko pro novinky</button>-->
+    <div class="jumbotron jumbotron-fluid">
+        <div id="container" class="containerParallax">
+            <div id="scene" class="scene">
+                <div data-depth="1.00" class="firstParallax"><img src="img/svg/parallaxa/home1.svg"></div>
+                <div data-depth="0.60" class="secondParallax"><img src="img/svg/parallaxa/home2.svg"></div>
+                <div data-depth="0.40" class="thirdParallax"><img src="img/svg/parallaxa/home3.svg"></div>
+                <!--<div data-depth="0.80" class="fourthParallax"><img src="img/parallax/home/mnu4.png"></div>-->
             </div>
+            <!--TODO: Pokud bude potřeba tlačítko-->
+            <!--<button type="button" class="btn btn-primary">Tlačítko pro novinky</button>-->
         </div>
-        <h1 class="hiddenHeader">Dětská skupina bebecha.cz</h1>
-        <div class="header">
-            <h2>O nás</h2>
-        </div>
-        <!--CAROUSEL-->
-        <div class="gtco-testimonials">
-            <div class="owl-carousel owl-carousel1 owl-theme">
-                <div>
-                    <div class="card text-center"><img class="card-img-top" src="https://images.unsplash.com/photo-1572561300743-2dd367ed0c9a?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=300" alt="">
-                        <div class="card-body">
-                            <h5>Ronne Galle <br />
-                                <span> Project Manager </span>
-                            </h5>
-                            <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat ” </p>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="card text-center"><img class="card-img-top" src="https://images.unsplash.com/photo-1588361035994-295e21daa761?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=301&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=301" alt="">
-                        <div class="card-body">
-                            <h5>Missy Limana<br />
-                                <span> Engineer </span>
-                            </h5>
-                            <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat ” </p>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="card text-center"><img class="card-img-top" src="https://images.unsplash.com/photo-1575377222312-dd1a63a51638?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=302&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=302" alt="">
-                        <div class="card-body">
-                            <h5>Martha Brown<br />
-                                <span> Project Manager </span>
-                            </h5>
-                            <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat ” </p>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="card text-center"><img class="card-img-top" src="https://images.unsplash.com/photo-1549836938-d278c5d46d20?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=303&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=303" alt="">
-                        <div class="card-body">
-                            <h5>Hanna Lisem<br />
-                                <span> Project Manager </span>
-                            </h5>
-                            <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat ” </p>
-                        </div>
+    </div>
+    <h1 class="hiddenHeader">Dětská skupina bebecha.cz</h1>
+    <div class="header">
+        <h2>O nás</h2>
+    </div>
+    <!--CAROUSEL-->
+    <div class="gtco-testimonials">
+        <div class="owl-carousel owl-carousel1 owl-theme">
+            <div class="first">
+                <div class="card text-center">
+                    <div class="ikona lokalita"></div>
+                    <div class="card-body">
+                        <h5>Dobříšsko</h5>
+                        <p class="card-text">Své profesionální<br>služby v oblasti<br> péče o dítě nabízíme<br>v oblasti Dobříšska .</p>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-10">
-                    <p>Něco málo o mě</p>
-                    <p>Jmenuji se Veronika Zyklová a jsem zdravotní sestra a porodní asistentka. Studovala jsem Pedagogickou fakultu Univerzity Karlovy, kde jsem úspěšně složila státní závěrečné zkoušky z pedagogiky a psychologie. Poskytováním služeb v oblasti
-                        hlídání dětí a vzděláváním se zabývám již sedmým rokem. Mám ráda nové výzvy a budu ráda za každý Váš podnět. Díky Vám se stále zdokonaluji a vzdělávám. Má práce je mým koníčkem a spokojené dítě i rodič tou nejlepší odměnou. Bc.
-                        Veronika Zyklová
-                    </p>
-                    <h2>Proč Bebecha?</h2>
-                    <p>Když se nám narodila dcera Tereza, tak jsme tomu 2 kilovému štěstí nechtěli říkat tak tvrdým jménem a vznikaly přezdívky jako třeba malé T, rozinka a na ničem jsme se nebyli schopni s manželem dohodnout. Každému se líbilo něco jiného.
-                        Až bobulka se ujalo, ale jak ta naše Bobulka začala poznávat svět, občas se stalo že tak trochu zlobila. No, co si budeme nalhávat zrovna naštvaní a rozzlobení rodiče nebudou oslovovat ve chvilce rozhořčení svou ratolest “Bobulko”
-                        a tak vznikaly další odvozeniny od jména Bobulka až došlo na Bebechu. No a když jsem zakládala OSVČ se zaměřením na děti, byl tenhle název první volbou. Vždyť tahle Bebecha je dalším mým úspěchem. </p>
+            <div class="second">
+                <div class="card text-center">
+                    <div class="ikona skolicka"></div>
+                    <div class="card-body">
+                        <h5>Školička na Pleši</h5>
+                        <p class="card-text">Spolupracujeme s Nemocnicí Na Pleši kde provozujeme školičku od 0 do 3,99ti let a letní programy pro děti.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="third">
+                <div class="card text-center">
+                    <div class="ikona tabory"></div>
+                    <div class="card-body">
+                        <h5>Tábory</h5>
+                        <p class="card-text">Během prázdnin probíhají v ZŠ Nová Ves pod Pleší příměstské tábory pro děti 6-12 let bez rodičů.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="fourth">
+                <div class="card text-center">
+                    <div class="ikona historie"></div>
+                    <div class="card-body">
+                        <h5>Historie</h5>
+                        <p class="card-text">Bebecha vznikla <br>v roce 2017 v Praze,<br>aby zprostředkovávala hlídání dětí .</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js'></script>
-    <script src="js/menu.js"></script>
-    <script src="js/parallax.js"></script>
-    <script src="js/owlcarousel.js"></script>
+    <!--CAROUSEL END-->
+    <div class="header">
+        <h3>Proč k nám</h3>
+        <h4>Přece to není jen o hlídání</h4>
+    </div>
+    <!--CARDS WHY-->
+    <div class="colorCards">
+        <div class="row">
+            <div class="col-md-3 col-sm-6 content-card">
+                <div class="card-big-shadow">
+                    <div class="card card-just-text blueCard">
+                        <div class="content">
+                            <div class="cardImage"></div>
+                            <h4 class="title">Péče o děti <br>od narození</h4>
+                            <p class="description">Díky naší <br>odbornosti můžeme <br>o Vaše děti pečovat<br>hned po šestinedělí.</p>
+                        </div>
+                    </div> <!-- end card -->
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 content-card">
+                <div class="card-big-shadow">
+                    <div class="card card-just-text greenCard">
+                        <div class="content">
+                            <div class="cardImage"></div>
+                            <h4 class="title">Individuální rozvoj osobnosti</h4>
+                            <p class="description">Po domluvě s rodiči rozvíjíme cíleně vlohy, s respektem k individuálním potřebám daného dítěte.</p>
+                        </div>
+                    </div> <!-- end card -->
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 content-card">
+                <div class="card-big-shadow">
+                    <div class="card card-just-text purpleCard">
+                        <div class="content">
+                            <div class="cardImage"></div>
+                            <h4 class="title">Rozvíjíme vztah dětí<br>k přírodě</h4>
+                            <p class="description">Formou her<br>a zajímavých činností vytváříme<br>a upevňujeme vztah<br>dětí k přírodě.</p>
+                        </div>
+                    </div> <!-- end card -->
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 content-card">
+                <div class="card-big-shadow">
+                    <div class="card card-just-text orangeCard">
+                        <div class="content">
+                            <div class="cardImage"></div>
+                            <h4 class="title">Nepřetržitá<br>pracovní doba</h4>
+                            <p class="description">Potřebujete zajistit péči<br>o děti během víkendu,<br>nebo v noci? U nás to není problém.</p>
+                        </div>
+                    </div> <!-- end card -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--CARDS WHY END-->
+    <div class="header">
+        <h3>Náš tým</h3>
+        <h4>Kdo se bude o Vaše ratolesti starat?</h4>
+    </div>
+    <!--CARDS PERSONS-->
+    <div class="teamCards row">
+        <div class="card col col-6 mb-3">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="img/veronika.png" class="img-fluid rounded-start" alt="Veronika">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <div class="header">
+                            <h4 class="card-title">Veronika Zyklová</h4>
+                        </div>
+                        <p class="card-text">Jmenuji se Veronika Zyklová a jsem zdravotní sestra a porodní asistentka. Studovala jsem Pedagogickou fakultu Univerzity Karlovy, kde jsem úspěšně složila státní závěrečné zkoušky z pedagogiky a psychologie.</p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary buttonPositive redOrangeGradient" data-bs-toggle="modal" data-bs-target="#oVeronice">
+                            Více o mně...
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card col col-6 mb-3">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="img/martina.jpg" class="img-fluid rounded-start" alt="Martina">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <div class="header">
+                            <h5 class="card-title">Martina</h5>
+                        </div>
+                        <p class="card-text">Zdravím všechny rodiče. <br>
+                            Jmenuji se Martina Faktorova. Mám 2 děti. Ve školce pracuji už druhým rokem.<br>
+                            Nejraději s dětmi tvořím, je krásné vidět ty pokroky, jak se děti zdokonalují, a jak mají ze svého výrobku radost. A dále mám ráda procházky lesem, jak děti poznávají les.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card col col-6 mb-3">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="img/zdenka.jpg" class="img-fluid rounded-start" alt="Zdeňka">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <div class="header">
+                            <h5 class="card-title">Zdeňka</h5>
+                        </div>
+                        <p class="card-text">Dobrý den, jmenuji se Zdeňka Poliačik.<br>
+                            Už od základní školy jsem chtěla být učitelkou. Sice jsem chtěla učit matematiku na základní nebo střední škole, ale dostala jsem se do školičky, čehož nelituji, naopak jsem za to velmi ráda.
+                            Práce s dětmi mě velmi baví, jejich pohledy na cokoliv jsou tak různé a někdy i velmi zábavné.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card col col-6 mb-3">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="img/katka.jpg" class="img-fluid rounded-start" alt="Katka">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <div class="header">
+                            <h5 class="card-title">Katka</h5>
+                        </div>
+                        <p class="card-text">Jmenuji se Katka Vohralíková, <br>vystudovala jsem Střední odbornou pedagogickou školu v Praze a v současné době studuji bakalářský obor Pedagogické fakulty na UK. Miluji děti, zvířata, háčkování a horské kolo. Hraji na klavír, flétnu a zpívám. Moc se na vás a vaše děti těším.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--CARDS PERSONS END-->
+    <div class="header">
+        <h3>Přehled cen</h3>
+        <h4>Za kolik peněz to bude?</h4>
+    </div>
+    <!--CARDS PRICE-->
+    <div class="colorCards">
+        <div class="row ceny">
+            <div class="col-md-4 col-sm-6 content-card">
+                <div class="card-big-shadow">
+                    <div class="card card-just-text blueCard2">
+                        <div class="content">
+                            <div class="cardImage"></div>
+                            <h4 class="title">Hlídání děti</h4>
+                            <p class="description">pravidelné hlídání: <span class="cena">140 Kč/hod</span><br>
+                                jednorázové hlídání: <span class="cena">150 Kč/hod</span></p>
+                        </div>
+                    </div> <!-- end card -->
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 content-card">
+                <div class="card-big-shadow">
+                    <div class="card card-just-text greenCard2">
+                        <div class="content">
+                            <div class="cardImage"></div>
+                            <h4 class="title">Školička</h4>
+                            <p class="description">dopolední docházka: <span class="cena">230 Kč/den</span><br>
+                                5x v týdnu: <span class="cena">250 Kč/den</span><br>
+                                4x v týdnu: <span class="cena">280 Kč/den</span><br>
+                                3x v týdnu: <span class="cena">330 Kč/den</span><br>
+                                2x v týdnu: <span class="cena">380 Kč/den</span><br>
+                                1x v týdnu: <span class="cena">430 Kč/den</span><br>
+                                <em>ceny jsou platné od 1. 9. 2021</em></p>
+                        </div>
+                    </div> <!-- end card -->
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 content-card">
+                <div class="card-big-shadow">
+                    <div class="card card-just-text purpleCard2">
+                        <div class="content">
+                            <div class="cardImage"></div>
+                            <h4 class="title">Příměstské tábory</h4>
+                            <p class="description">Již nyní připravujeme<br>na rok 2022</p>
+                        </div>
+                    </div> <!-- end card -->
+                </div>
+            </div>
+        </div>
+        <p class="poznamka">Všechny ceny jsou uvedeny v jednotlivých sekcích.</p>
+    </div>
+    <!--CARDS PRICE END-->
+    <!--FOOTER-->
+    <div class="footer">
+        <div class="row">
+            <div class="col col-md-8">
+                <div class="row">
+                    <div class="col col-md-6">
+                        <h3>Kontaktní údaje</h3>
+                        <p>Provozovna školičky</br>
+                            Areál Nemocnice Na Pleši,<br>
+                            Nová Ves pod Pleší 111<br>
+                            <br>
+                            Otevřeno: 6.00-16.00</p>
+                    </div>
+                    <div class="col col-md-6">
+                        <p>Provozovatel<br>
+                            Bc. Veronika Zyklová<br>
+                            e-maili: info@bebecha.cz<br>
+                            telefon: +420 773 779 779<br>
+                            IČO: 08134529<br>
+                            Číslo účtu: 2801627005/2010</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-md-4">
+                <form>
+                    Tady bude formulář
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--FOOTER END-->
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade aboutVerca" id="oVeronice" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="header">
+                    <h5 class="card-title">Něco málo o mně</h5>
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body row">
+                <div class="col col-9 text">
+                    <p>Jmenuji se Veronika Zyklová a jsem zdravotní sestra a porodní asistentka. Studovala jsem Pedagogickou fakultu Univerzity Karlovy, kde jsem úspěšně složila státní závěrečné zkoušky z pedagogiky a psychologie. Poskytováním služeb v oblasti hlídání dětí a vzděláváním se zabývám již sedmým rokem. Mám ráda nové výzvy a budu ráda za každý Váš podnět. Díky Vám se stále zdokonaluji a vzdělávám. Má práce je mým koníčkem a spokojené dítě i rodič tou nejlepší odměnou.
+                    <br>Bc. Veronika Zyklová</p>
+                    <h5>Proč Bebecha?</h5>
+                    <p>Když se nám narodila dcera Tereza, tak jsme tomu 2 kilovému štěstí nechtěli říkat tak tvrdým jménem a vznikaly přezdívky jako třeba malé T, rozinka a na ničem jsme se nebyli schopni s manželem dohodnout. Každému se líbilo něco jiného. Až bobulka se ujalo, ale jak ta naše Bobulka začala poznávat svět, občas se stalo že tak trochu zlobila. No, co si budeme nalhávat zrovna naštvaní a rozzlobení rodiče nebudou oslovovat ve chvilce rozhořčení svou ratolest “Bobulko” a tak vznikaly další odvozeniny od jména Bobulka až došlo na Bebechu. No a když jsem zakládala OSVČ se zaměřením na děti, byl tenhle název první volbou.
+                    Vždyť tahle Bebecha je dalším mým úspěchem. 🙂</p>
+                </div>
+                <div class="col col-3 image">
+                    <img src="img/veronika.png" alt="Pár slov o Veronice, ilustrační foto">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary buttonPositive redOrangeGradient" data-bs-dismiss="modal">Zavřít</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js'></script>
+<script src="js/menu.js"></script>
+<script src="js/parallax.js"></script>
+<script src="js/owlcarousel.js"></script>
 </body>
 
 </html>
